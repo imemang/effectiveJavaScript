@@ -1,0 +1,4 @@
+20170527
+	ajax로 하다가 크로스도메인에 걸림
+	- http://adrenal.tistory.com/16 참고
+	spring 기반이 아닌 환경에 익숙치가 않아서 servlet부터 공부해야겠다.
