@@ -3,9 +3,31 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Index</title>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+$(function() {
+	// 마우스 커서 변경
+	$(".pointer").css("cursor","pointer");
+	
+	// 네이버 openApi 검색 페이지 연결
+	$("#btnSearch").on("click", function(){
+		link("naverApi", "search.jsp");
+	});
+	
+	function link(folder, url){
+		var host = window.location.host;
+		var pathname = window.location.pathname;
+		
+		$(location).attr('href', folder + "/" + url);
+	}
+	
+});
+</script>
 </head>
 <body>
-TEST
+	<span>NAVER API</span><br/>
+	<span id="btnSearch" class="pointer">- search</span>
 </body>
 </html>
